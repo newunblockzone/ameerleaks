@@ -116,15 +116,19 @@
 
 <div class="gallery">
 
-  <!-- Card 1 - MOV Video -->
-  <div class="card">
-    <video autoplay muted loop playsinline>
-      <source src="https://files.catbox.moe/47eo0r.mov" type="video/quicktime">
-    </video>
-    <div class="caption">
-      <span>Leak #1:</span> ameer ameer ameer...
-    </div>
+<!-- Card 1 - MOV Video -->
+<div class="card">
+  <video autoplay muted loop playsinline>
+    <!-- First source: MOV (QuickTime), fallback to MP4 if MOV isn't supported -->
+    <source src="https://raw.githack.com/newunblockzone/ameerleaks/main/47eo0r.mov" type="video/quicktime">
+    <source src="https://raw.githack.com/newunblockzone/ameerleaks/main/47eo0r.mp4" type="video/mp4">
+    <!-- Fallback text if neither video type is supported -->
+    Your browser does not support the video tag.
+  </video>
+  <div class="caption">
+    <span>Leak #1:</span> ameer ameer ameer...
   </div>
+</div>
 
   <!-- Card 2 -->
   <div class="card">
